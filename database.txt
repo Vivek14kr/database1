@@ -17,6 +17,6 @@ db.users.update({ "_id" : ObjectId("619bl5fd7cad15380337a133")},{$set:{first_nam
 db.users.updateMany({gender:"Male"},{$set:{gender:"female"}})
 db.users.remove({"_id" : ObjectId("619ba7af35a24dd7990d8a57")})
 db.users.deleteOne({"_id" :ObjectId("619ba7af35a24dd7990d8a58")})
-db.users.deleteMany({"Male"})
+db.users.deleteMany({gender:"Male"})
 
 db.dropDatabase()
